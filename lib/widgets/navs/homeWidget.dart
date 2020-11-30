@@ -10,14 +10,14 @@ class homeWidget extends StatelessWidget {
       key: _homeKey,
       body: new Stack(children: <Widget>[
         curvefirst(context),
-        LineChartSample1(),
+        LineChartGraph(),
         new Positioned(
           left: 30.0,
           right: 30.0,
           child: greeting(context),
         ),
         new Positioned(
-          top: 100.0,
+          top: 120.0,
           left: 30.0,
           right: 30.0,
           child: balanceCard(context),
@@ -49,7 +49,7 @@ class homeWidget extends StatelessWidget {
           style: TextStyle(fontSize: 50.0, color: Colors.white),
         ),
         Text(
-          "Angelica Pelaez",
+          "Juan Añez",
           textAlign: TextAlign.right,
           style: TextStyle(fontSize: 22.0, color: Colors.white),
         )
@@ -64,7 +64,7 @@ class homeWidget extends StatelessWidget {
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: const BorderRadius.all(
-              Radius.circular(20.0),
+              Radius.circular(40.0),
             ),
           ),
           elevation: 1.0,
@@ -73,15 +73,14 @@ class homeWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               const ListTile(
-
                 title: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 20, 0, 10),
+                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                   child: Text(
-                    '\$95.00',
+                    '\$120.00',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 70.0,
+                      fontSize: 57.0,
                     ),
                   ),
                 ),
@@ -90,7 +89,7 @@ class homeWidget extends StatelessWidget {
                   child: Text(
                     'Current Balance.',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    style: TextStyle(fontSize: 16.0, color: Colors.white),
                   ),
                 ),
               ),

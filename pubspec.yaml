@@ -21,10 +21,18 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  rxdart: ^0.24.1
+  bloc: ^4.0.0
+  flutter_bloc: ^4.0.0
+  http: ^0.12.2
   bottom_navy_bar: ^5.3.2
   fl_chart: ^0.9.4
+  global_configuration: 1.6.0
+  mvc_pattern: ^6.6.3
+  clippy_flutter: ^1.1.0
   flutter:
     sdk: flutter
+
 
 
   # The following adds the Cupertino Icons font to your application.

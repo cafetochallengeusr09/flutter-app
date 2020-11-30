@@ -21,16 +21,8 @@ class PlanetRow extends StatelessWidget {
         fontSize: 20.0,
         fontWeight: FontWeight.w400);
 
-    Widget _planetValue({String value, String image}) {
-      return new Row(children: <Widget>[
-        new Image.asset(image, height: 12.0),
-        new Container(width: 8.0),
-        new Text("9.52", style: regularTextStyle),
-      ]);
-    }
-
     final planetCardContent = new Container(
-      margin: new EdgeInsets.fromLTRB(0.0, 16.0, 0.0, 16.0),
+      margin: new EdgeInsets.fromLTRB(0.0, 8.0, 0.0, 16.0),
       constraints: new BoxConstraints.expand(),
       child: new Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -50,7 +42,7 @@ class PlanetRow extends StatelessWidget {
       decoration: new BoxDecoration(
         color: new Color(0xFF333366),
         shape: BoxShape.rectangle,
-        borderRadius: new BorderRadius.circular(30.0),
+        borderRadius: new BorderRadius.circular(40.0),
         boxShadow: <BoxShadow>[
           new BoxShadow(
             color: Colors.black12,
@@ -62,7 +54,7 @@ class PlanetRow extends StatelessWidget {
     );
 
     return new Container(
-        height: 120.0,
+        height: 130.0,
         margin: const EdgeInsets.symmetric(
           vertical: 5.0,
         ),

@@ -1,12 +1,12 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-class LineChartSample1 extends StatefulWidget {
+class LineChartGraph extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => LineChartSample1State();
+  State<StatefulWidget> createState() => LineChartGraphState();
 }
 
-class LineChartSample1State extends State<LineChartSample1> {
+class LineChartGraphState extends State<LineChartGraph> {
   bool isShowingMainData;
 
   @override
@@ -18,12 +18,12 @@ class LineChartSample1State extends State<LineChartSample1> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(30, 300, 30, 0),
+      padding: const EdgeInsets.fromLTRB(0, 300, 0, 0),
       child: AspectRatio(
         aspectRatio: 1.23,
         child: Container(
           decoration: BoxDecoration(
-            borderRadius: const BorderRadius.all(Radius.circular(20)),
+            borderRadius: const BorderRadius.all(Radius.circular(0)),
             gradient: LinearGradient(
               colors: [
                 Theme.of(context).primaryColor,
@@ -44,7 +44,7 @@ class LineChartSample1State extends State<LineChartSample1> {
                   const Text(
                     'Weekly Summary',
                     style: TextStyle(
-                        color: Colors.white, fontSize: 25),
+                        color: Colors.white, fontSize: 22),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(
@@ -52,9 +52,9 @@ class LineChartSample1State extends State<LineChartSample1> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.only(right: 16.0, left: 6.0),
+                      padding: const EdgeInsets.only(right: 18, left: 18),
                       child: LineChart(
-                        sampleData2(context),
+                        lastWeekData(context),
                         swapAnimationDuration:
                             const Duration(milliseconds: 250),
                       ),
@@ -73,7 +73,7 @@ class LineChartSample1State extends State<LineChartSample1> {
     );
   }
 
-  LineChartData sampleData2(BuildContext context) {
+  LineChartData lastWeekData(BuildContext context) {
     return LineChartData(
       lineTouchData: LineTouchData(
         enabled: true,
