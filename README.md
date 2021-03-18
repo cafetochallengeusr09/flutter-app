@@ -1,6 +1,6 @@
-# emida
+# Top up Sales
 
-A new Emida Flutter application.
+A new TopUP Flutter application.
 
 ## Getting Started
 
